@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main (){
+  int i, n, numero, soma=0;
+  printf ("Digite a quantidade de números: \n");
+  scanf ("%d", &n);
+  for (i=1; i<=n; i++){
+    printf ("Digite o %d número: \n", i);
+    scanf ("%d", &numero);
+    soma+=i;
+  }
+  printf ("A soma é: %d \n", soma);
+}
