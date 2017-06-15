@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main (){
+  int t1=1, t2=1, tnumero, novotermo;
+  printf("Informe o número de termos");
+  scanf ("%d", &tnumero);
+  for (i=3; i<=tnumero;i++){
+    novotermo=t1 + t2;
+    printf("%d\n", novotermo);
+    t1 = t2;
+    t2 = novotermo;
+  }
+}
