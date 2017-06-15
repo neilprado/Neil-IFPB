@@ -1,0 +1,13 @@
+#include <stdio.h>
+void main (){
+  int n, maior=0;
+  do{
+    printf ("Digite o número: \n");
+    scanf ("%d", &n);
+    if (n>maior){
+      maior=n;
+    }
+  }while(n!=0);
+  
+  printf("O maior valor é: %d", maior);
+}
