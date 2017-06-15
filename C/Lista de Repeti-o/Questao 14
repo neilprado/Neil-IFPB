@@ -1,0 +1,21 @@
+#include <stdio.h>
+void main(){
+  int idade, i=0, maior=0, menor=200, soma=0 ;
+  float media=0;
+  do{
+    printf("Digite uma idade: \n");
+    scanf ("%d", &idade);
+    soma+=idade;
+    i++;
+    if (idade > maior){
+      maior=idade;
+    }if ((idade < menor) && (idade !=0)) {
+      menor =idade;
+    }
+  }while (idade!=0);
+  media = soma/(i-1);
+  printf("O número de pessoas ouvidas foi: %d \n", i-1);
+  printf("A média de idade é: %.2f \n", media);
+  printf("A maior idade é: %d \n", maior);
+  printf("A menor idade é: %d \n", menor);
+}
