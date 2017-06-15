@@ -1,0 +1,14 @@
+#include <stdio.h>
+void main(){
+  int i, n, numero, maior=0;
+  printf ("Digite a quantidade de valores");
+  scanf ("%d", &numero);
+  for (i=1;i<=numero;i++){
+    printf("Digite um número: \n");
+    scanf ("%d", &n);
+    if (n>maior){
+      maior=n;
+    }
+  }
+    printf ("O maior número é: %d", maior);
+}
