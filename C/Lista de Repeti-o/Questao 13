@@ -1,0 +1,22 @@
+#include <stdio.h>
+void main (){
+  char letra;
+  int a, e, i, o, u;
+  a=e=i=o=u=0;
+  do{
+    printf("Digite a letra: ");
+    scanf("%c%*c", &letra);
+    switch (letra){
+      case 'a': a++; break;
+      case 'e': e++; break;
+      case 'i': i++; break;
+      case 'o': o++; break;
+      case 'u': u++; break;
+    }
+  }while(letra!='z');
+  printf("O número de letras A é: %d \n", a);
+  printf("O número de letras E é: %d \n", e);
+  printf("O número de letras I é: %d \n", i);
+  printf("O número de letras O é: %d \n", o);
+  printf("O número de letras U é: %d \n", u);
+}
