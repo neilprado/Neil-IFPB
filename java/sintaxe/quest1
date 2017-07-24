@@ -1,9 +1,0 @@
-#include <stdio.h>
-int main() {
-    int nasc, idade;
-    printf("Informe o ano de nascimento: \n");
-    scanf("%d", &nasc);
-    idade = 2017 - nasc;
-    printf("A sua idade e: %d", idade);
-    return 0;
-}
