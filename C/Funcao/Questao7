@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<string.h>
+
+typedef struct {
+    char nome[31], matricula[11];
+    float salario;
+}Funcionario;
+
+float Aumento (float x, float y);
+
+int main (){
+    Funcionario func;
+    float k, reajuste;
+
+    do{
+        printf("Digite a matricula do funcionario: ");
+        scanf("%s[\n]", func.matricula);
+        getchar();
+        if(strcmp(func.matricula, "0")!= 0){
+            printf("Digite o nome do funcionario: ");
+            scanf("%s[\n]", func.nome);
+            getchar();
+            printf("Digite seu salario: ");
+            scanf("%f", &func.salario);
+            printf("Digite o seu reajuste: ");
+            scanf("%f", &k);
+            reajuste = Aumento(func.salario, k);
+            printf("Nome: %s\n Matricula: %s\n Salario: %.2f\n Reajuste: %.2f", func.nome, func.matricula, func.salario, reajuste);
+        }
+    }while(strcmp(func.matricula, "0")!= 0);
+    return 0;
+}
+
+float Aumento (float x, float y){
+    float aumento = 0;
+
+    aumento = aumento +(x * (y/100));
+    return aumento;
+}
