@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+float Metade (float x);
+
+int main(){
+    float vetor[5];
+    int i;
+    for(i=0; i<5; i++){
+        printf("Digite os numeros: ");
+        scanf ("%f", &vetor[i]);
+    }
+
+    for(i=0; i<5; i++){
+        vetor[i] = Metade(vetor[i]);
+        printf("%.2f\n", vetor[i]);
+    }
+
+    return 0;
+}
+
+float Metade (float x){
+    float half;
+
+    half = x/2;
+    return half;
+}
+
