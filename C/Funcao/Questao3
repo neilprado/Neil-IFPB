@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<string.h>
+typedef struct{
+    int dia, mes, ano;
+}Data;
+
+void Nome_Mes (int x, int y, int z);
+int main(){
+    Data data;
+
+    printf("Digite a data: ");
+    scanf("%d %d %d", &data.dia, &data.mes, &data.ano);
+    Nome_Mes(data.dia, data.mes, data.ano);
+
+return 0;
+}
+
+void Nome_Mes (int x, int y, int z){
+    char mes[11];
+    switch(y){
+        case 1: strcpy(mes, "janeiro"); break;
+        case 2: strcpy(mes, "fevereiro"); break;
+        case 3: strcpy(mes, "mar�o");  break;
+        case 4: strcpy(mes, "abril"); break;
+        case 5: strcpy(mes, "maio"); break;
+        case 6: strcpy(mes, "junho"); break;
+        case 7: strcpy(mes, "julho"); break;
+        case 8: strcpy(mes, "agosto"); break;
+        case 9: strcpy(mes, "setembro"); break;
+        case 10:strcpy(mes, "outubro"); break;
+        case 11:strcpy(mes, "novembro"); break;
+        case 12:strcpy(mes, "dezembro"); break;
+    }
+
+        printf("%d de %s de %d", x, mes, z);
+}
