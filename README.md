@@ -30,7 +30,7 @@ print("Média:", notas.mean())
 ```
 
 ### Estrutura de dados base do Pandas
-1. Series - Uma Series é como um array unidimensional, uma lista de valores. Toda Series possui um índice, o index, que dá rótulos a cada elemento da lista. 
+* Series - Uma Series é como um array unidimensional, uma lista de valores. Toda Series possui um índice, o index, que dá rótulos a cada elemento da lista. 
 ``` python
 print("Notas index:", notas.index)
 print("Desvio padrão:", notas.std())
@@ -42,7 +42,7 @@ print(notas**2)
 # Logarítmo
 print(np.log(notas))
 ```
-2. Data Frame - Já um DataFrame é uma estrutura bidimensional de dados, como uma planilha.
+* Data Frame - Já um DataFrame é uma estrutura bidimensional de dados, como uma planilha.
 ``` python
 df = pd.DataFrame({'Aluno' : ["Wilfred", "Abbie", "Harry", "Julia", "Carrie"],
                    'Faltas' : [3,4,2,1,4],
