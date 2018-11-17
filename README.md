@@ -69,7 +69,7 @@ print(df[(df["Seminário"] > 8.0) & (df["Prova"] > 3)])
 
 ### Tipos de entrada de dados usados
 
-* Com CSV: **pd.read_csv**
+* Com CSV: **pd.read_csv()**
 ``` python
 # 5 primeiros
 print(df.head())
@@ -100,7 +100,7 @@ print(df2.fillna(99))
 print(df2.isna())
 ```
 
-* Com HTML: **pd.read_html**
+* Com HTML: **pd.read_html()**
   * Bibliotecas
     1. Requests
     2. BeautifulSoup
